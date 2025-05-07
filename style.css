@@ -11,8 +11,7 @@
 body {
     --s: 150px;
     --c1: #000;
-    --c2: #0a0a0a;
-  
+    --c2: #121212;
     --_g: var(--c1) 0% 5%, var(--c2) 6% 15%, var(--c1) 16% 25%, var(--c2) 26% 35%,
       var(--c1) 36% 45%, var(--c2) 46% 55%, var(--c1) 56% 65%, var(--c2) 66% 75%,
       var(--c1) 76% 85%, var(--c2) 86% 95%, #0000 96%;
@@ -62,7 +61,7 @@ img {
     padding: 20px;
     gap: 16px;
     border-radius: 1.2rem;
-    box-shadow: 0px 1rem 1.5rem -0.9rem #000000e1;
+    box-shadow: 0px 1rem 1.5rem -0.9rem #000;
     max-width: 400px;
 }
 
@@ -103,5 +102,20 @@ span {
 @media (min-width: 768px) {
     img {
         margin-top: 2em;
+    }
+
+    body {
+        --s: 150px;
+        --c1: #000;
+        --c2: #0f0f0f;
+        --_g: var(--c1) 0% 5%, var(--c2) 6% 15%, var(--c1) 16% 25%, var(--c2) 26% 35%,
+        var(--c1) 36% 45%, var(--c2) 46% 55%, var(--c1) 56% 65%, var(--c2) 66% 75%,
+        var(--c1) 76% 85%, var(--c2) 86% 95%, #0000 96%;
+        background: radial-gradient(50% 50% at 100% 0, var(--_g)),
+        radial-gradient(50% 50% at 0 100%, var(--_g)),
+        radial-gradient(50% 50%, var(--_g)),
+        radial-gradient(50% 50%, var(--_g)) calc(var(--s) / 2) calc(var(--s) / 2)
+            var(--c1);
+        background-size: var(--s) var(--s);
     }
 }
