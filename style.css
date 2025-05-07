@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Cabin:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech+Mono&family=Varela&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -38,7 +39,7 @@ img {
 }
 
 .titulo {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: #fff;
     text-align: center;
@@ -71,7 +72,7 @@ a {
     font-size: 1rem;
 }
 
-.button {
+button {
     cursor: pointer;
     padding: 1em;
     font-size: 1em;
@@ -91,6 +92,16 @@ a {
     border: 0.2em solid #ffffff98;
 }
 
+button:hover {
+    transform: scale(1.05);
+}
+
 span {
     color: #000;
+}
+
+@media (min-width: 768px) {
+    img {
+        margin-top: 2em;
+    }
 }
