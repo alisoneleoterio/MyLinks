@@ -33,7 +33,7 @@ body {
 img {
     width: 8rem;
     border-radius: 100%;
-    margin-top: 3.5em;
+    margin-top: 2.5em;
     border: 6px solid #000;
 }
 
@@ -123,7 +123,7 @@ footer p {
 
 @media (min-width: 768px) {
     img {
-        margin-top: 2em;
+        margin-top: 1rem;
     }
 
     body {
@@ -139,5 +139,14 @@ footer p {
         radial-gradient(50% 50%, var(--_g)) calc(var(--s) / 2) calc(var(--s) / 2)
             var(--c1);
         background-size: var(--s) var(--s);
+    }
+
+    .titulo {
+        margin-top: 8px;
+    }
+
+    footer {
+        position: fixed;
+        bottom: -36px;
     }
 }
